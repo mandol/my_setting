@@ -1,4 +1,5 @@
 # some more ls aliases
+alias ls='ls --color=tty'
 alias ll='ls -alh'
 alias la='ls -A'
 alias l='ls -CFlh'
