@@ -127,9 +127,7 @@ else \
   echo " '$Yellow$PathShort$Color_Off'\$ "; \
 fi)'
 
-if [ -x /usr/bin/dircolors ]; then
-   test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-fi
+eval "$(dircolors -b ~/.dir_colors)"
 
 extract () {
    if [ -f $1 ] ; then
