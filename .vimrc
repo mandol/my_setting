@@ -7,12 +7,13 @@ syntax enable
 set background=dark
 colorscheme GRB256
 
-set noexpandtab
+filetype plugin indent on
 set copyindent
 set preserveindent
 set softtabstop=0
 set shiftwidth=4
 set tabstop=4
+set expandtab
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -34,6 +35,8 @@ Plugin 'git://git.wincent.com/command-t.git'
 " The sparkup vim script is in a subdirectory of this repo called vim.
 " Pass the path to set the runtimepath properly.
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+
+Plugin 'SuperTab'
  
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
