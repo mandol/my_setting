@@ -1,10 +1,6 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-map <F5> :NERDTreeToggle<CR>
-
-syntax enable
-set background=dark
 colorscheme GRB256
 
 filetype plugin indent on
@@ -14,6 +10,8 @@ set softtabstop=0
 set shiftwidth=4
 set tabstop=4
 set expandtab
+
+map <F5> :NERDTreeToggle<CR>
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
