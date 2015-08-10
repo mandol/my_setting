@@ -51,4 +51,17 @@ filetype plugin indent on    " required
 
 Plugin 'The-NERD-tree'
 
+function TabToggle()
+  if &expandtab
+    set shiftwidth=4
+    set softtabstop=0
+    set noexpandtab
+  else
+    set shiftwidth=4
+    set softtabstop=4
+    set expandtab
+  endif
+endfunction
+
 map <F5> :NERDTreeToggle<CR>
+nmap <F9> mz:execute TabToggle()<CR>'z
