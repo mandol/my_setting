@@ -11,10 +11,8 @@ set shiftwidth=4
 set tabstop=4
 set expandtab
 
-map <F5> :NERDTreeToggle<CR>
-
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=~/.vim/bundle/Vundle
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
@@ -52,3 +50,5 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 Plugin 'The-NERD-tree'
+
+map <F5> :NERDTreeToggle<CR>
