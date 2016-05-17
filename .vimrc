@@ -11,6 +11,8 @@ set shiftwidth=4
 set tabstop=4
 set expandtab
 
+set t_Co=256
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle
 call vundle#begin()

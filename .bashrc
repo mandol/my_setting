@@ -13,6 +13,9 @@ alias diskspace="du -S | sort -n -r |more"
 # Command line mplayer movie watching for the win.
 alias mp="mplayer -fs"
 
+# Get 256 color to work in tmux
+alias tmux="TERM=xterm-256color tmux"
+
 # Show me the size (sorted) of only the folders in this directory
 alias folders="find . -maxdepth 1 -type d -print | xargs du -sk | sort -rn"
 
